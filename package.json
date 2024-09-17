@@ -1,0 +1,31 @@
+{
+	"name": "wandering-rodeo",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"format": "bunx biome format --write .",
+		"lint": "bunx biome lint --write .",
+		"flint": "bunx biome check --write .",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.1",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
+		"@unocss/reset": "^0.62.3",
+		"svelte": "^5.0.0-next.1",
+		"svelte-check": "^4.0.0",
+		"typescript": "^5.0.0",
+		"unocss": "^0.62.3",
+		"vite": "^5.0.3",
+		"vitest": "^2.0.0"
+	},
+	"type": "module",
+	"trustedDependencies": ["@biomejs/biome"]
+}
